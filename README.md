@@ -13,7 +13,12 @@ sever_gui=false
 working_directory=/full/path/to/directory
 server_file=server.jar
 ```
+The topic_command ist the topic to which you can send minecraft commands to control your server. <br \>
+The topic_control_server is the topic to which you can send the payloads ```ON``` and ```OFF``` to start and stop your minecraft Server. When the Server chrashes, it will automatically restart.<br \>
+The topic_control_supervisor is the topic to which you can send the payload ```OFF``` to shut down the Supervisor (I don't know when you need this).<br \>
 If you want to put your server in the same folder as the rest, you can just comment out the working directory like this:
 ```
 #working_directory=
 ```
+## To-Do
+Option for custom Java Commands.
